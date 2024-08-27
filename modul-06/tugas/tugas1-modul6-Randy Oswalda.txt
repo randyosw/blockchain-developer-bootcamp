@@ -1,0 +1,5 @@
+The four-byte representation of function signature from those two functions results in two different hexadecimal values. 
+In this case, foo() 's value is greater than bar() 's.
+Four-byte representation of a function's signature is called function signature hash. 
+It is used to uniquely identify functions within a contract and is derived from taking the function parameters and hashing them together with a unique algorithm. 
+This hash can then be used to call the function in the future.
