@@ -1,0 +1,26 @@
+constructor
+    happy path: Owner is msg.sender, minCandidatesCount is correct, VotingLength is correct
+
+addCandidate function
+    happy path: event succeed
+    unhappy path: called by owner, not correct vote state
+
+startVoting function
+    happy path: minimum candidates count is greater than candidates count
+    unhappy path: called by owner, not correct vote state
+
+vote function
+    happy path: voter has not voted, correct candidateId, not voteEndTimestamp
+    unhappy path: not correct vote state
+
+endVoting function
+    happy path: not voteEndTimestamp
+    unhappy path: not owner, not correct vote state
+
+chooseTheWinner function
+    happy path: 
+    unhappy path: not owner, not correct vote state
+
+getCandidateVoteCount function
+    happy path: valid candidateId
+    unhappy path: not owner
